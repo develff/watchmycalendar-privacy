@@ -1,151 +1,154 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WatchMyCalendar Privacy Policy</title>
-
+<title>WatchMyCalendar — Privacy Policy</title>
 <style>
-:root {
-  --bg: #121212;
-  --card: #1e1e1e;
-  --text: #f5f5f5;
-  --muted: #b0b0b0;
-  --accent: #4fc3f7;
-}
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0071e3;
+    --border: #d2d2d7;
+    --shadow: 0 1px 4px rgba(0,0,0,.08);
+  }
 
-* {
-  box-sizing: border-box;
-}
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #f5f5f5;
+      --muted: #b0b0b0;
+      --accent: #4fc3f7;
+      --border: #2c2c2e;
+      --shadow: 0 1px 4px rgba(0,0,0,.3);
+    }
+  }
 
-body {
-  margin: 0;
-  padding: 24px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px 16px 48px;
+  }
 
-header {
-  text-align: center;
-  margin-bottom: 32px;
-}
+  .container { max-width: 680px; margin: 0 auto; }
 
-h1 {
-  margin-bottom: 8px;
-}
+  header {
+    text-align: center;
+    padding: 40px 0 32px;
+  }
 
-.subtitle {
-  color: var(--muted);
-}
+  header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
 
-.card {
-  background: var(--card);
-  padding: 20px;
-  border-radius: 16px;
-  margin-bottom: 16px;
-}
+  header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
 
-h2 {
-  margin-top: 0;
-  color: var(--accent);
-}
+  header p {
+    color: var(--muted);
+    margin-top: 4px;
+    font-size: 0.95rem;
+  }
 
-ul {
-  padding-left: 20px;
-}
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+  }
 
-.footer {
-  text-align: center;
-  color: var(--muted);
-  margin-top: 32px;
-  font-size: 0.9rem;
-}
+  .card h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
+  .card p { margin-bottom: 8px; }
+  .card p:last-child { margin-bottom: 0; }
+
+  ul {
+    padding-left: 20px;
+    margin: 6px 0;
+  }
+
+  li { margin-bottom: 2px; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 32px;
+  }
 </style>
-
 </head>
-
 <body>
 <div class="container">
 
-<header>
-  <h1>? WatchMyCalendar</h1>
-  <p class="subtitle">
-    Privacy Policy
-  </p>
-</header>
+  <header>
+    <img src="icon.png" alt="WatchMyCalendar icon">
+    <h1>WatchMyCalendar</h1>
+    <p>Privacy Policy</p>
+  </header>
 
-<div class="card">
-  <h2>? Calendar Data</h2>
-  <p>
-    WatchMyCalendar accesses calendar information solely to display upcoming events on your Wear OS smartwatch.
-  </p>
-  <p>
-    Calendar data remains on your devices and is not transmitted to servers operated by the developer.
-  </p>
-</div>
+  <div class="card">
+    <h2>Calendar Data</h2>
+    <p>WatchMyCalendar accesses calendar information solely to display upcoming events on your Wear OS smartwatch.</p>
+    <p>Calendar data remains on your devices and is not transmitted to servers operated by the developer.</p>
+  </div>
 
-<div class="card">
-  <h2>? Data Collection</h2>
-  <p>
-    WatchMyCalendar does not collect personal data. However, anonymous crash reports
-    are collected to improve app stability (see below).
-  </p>
-</div>
+  <div class="card">
+    <h2>Data Collection</h2>
+    <p>WatchMyCalendar does not collect personal data. However, anonymous crash reports are collected to improve app stability (see below).</p>
+  </div>
 
-<div class="card">
-  <h2>? No Tracking</h2>
-  <ul>
-    <li>No analytics</li>
-    <li>No advertising</li>
-    <li>No user accounts</li>
-  </ul>
-</div>
+  <div class="card">
+    <h2>No Tracking</h2>
+    <ul>
+      <li>No analytics</li>
+      <li>No advertising</li>
+      <li>No user accounts</li>
+    </ul>
+  </div>
 
-<div class="card">
-  <h2>🐛 Crash Reporting</h2>
-  <p>
-    WatchMyCalendar uses Firebase Crashlytics (Google) to collect anonymous crash reports.
-    This helps us identify and fix stability issues.
-  </p>
-  <p>Crash reports may include:</p>
-  <ul>
-    <li>Device model and operating system version</li>
-    <li>App version</li>
-    <li>Stack trace of the crash</li>
-  </ul>
-  <p>
-    No personal data, calendar content, or event details are included in crash reports.
-    Data is processed by Google in accordance with the
-    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
-  </p>
-</div>
+  <div class="card">
+    <h2>Crash Reporting</h2>
+    <p>WatchMyCalendar uses Firebase Crashlytics (Google) to collect anonymous crash reports. This helps us identify and fix stability issues.</p>
+    <p>Crash reports may include:</p>
+    <ul>
+      <li>Device model and operating system version</li>
+      <li>App version</li>
+      <li>Stack trace of the crash</li>
+    </ul>
+    <p>No personal data, calendar content, or event details are included in crash reports. Data is processed by Google in accordance with the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </div>
 
-<div class="card">
-  <h2>? Contact</h2>
-  <p>
-    If you have questions regarding this Privacy Policy, please contact:
-  </p>
-  <p>
-    <strong>develff@gmail.com</strong>
-  </p>
-</div>
+  <div class="card">
+    <h2>Contact</h2>
+    <p>If you have questions regarding this Privacy Policy, please contact:</p>
+    <p><strong>develff@gmail.com</strong></p>
+  </div>
 
-<div class="footer">
-  Last updated: June 2026
-</div>
+  <footer>Last updated: June 2026</footer>
 
 </div>
 </body>
